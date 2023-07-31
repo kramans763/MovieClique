@@ -1,0 +1,91 @@
+body{
+    background-color: black;
+    color: white;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: grey;
+    padding: 25px;
+    color: aqua;
+}
+.projectName{
+       color: orangered;
+}
+.search-bar{
+    text-align: center;
+    margin: 10px;
+}
+.sorting-option{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.sorting-button{
+    width: 250px;
+    height: 30px;
+}
+.tab{
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    margin: 15px;
+    margin-left: 50px;
+}
+.favorites-tab{
+    width: 100px;
+}
+.all-tab, .favorites-tab{
+    cursor: pointer;
+}
+
+.active-tab{
+    background-color:black;
+    color:yellow;
+    border: none;
+    border-radius: 20px;
+}
+
+#movies-card-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 15px;
+}
+
+.card{
+    width: 250px;
+    /*height: 400px;*/
+    border: 1px solid black;
+    padding: 15px;
+}
+.movie-title{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.votes-favorites{
+    display: flex;
+    justify-content: space-between;
+}
+.favorites{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+}
+.poster{
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.pagination{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    gap: 10px;
+}
+.footer{
+    background-color: grey;
+}

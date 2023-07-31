@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header class="header">
+        <a style="text-decoration: none;" href="#">
+            <h1 class="projectName">MovieClique</h1>
+        </a>
+        <div class="about">
+            About
+        </div>
+    </header>
+
+    <!--.......Search Bar...........-->
+    <div class="search-bar">
+        <input type="search" id="search-input" placeholder="Enter your query">
+        <button class="button" id="search-btn">Search</button>
+    </div>
+
+    <!--.......Sorting...........-->
+    <div class="sorting-option">
+        <button class="sorting-button" id="sort-by-date">Sort By date(old - new)</button>
+        <button class="sorting-button" id="sort-by-rating">Sort By Rating(least - high)</button>
+    </div>
+
+    <!--.......Main Section...........-->
+
+    <div class="main">
+        <!--....tabs........-->
+        <div class="tab">
+            <button id="all-tab" class="all-tab active-tab">All</button>
+            <button id="favorites-tab" class="favorites-tab">Favorites</button>
+        </div>
+
+        <!--.......Main Movie List...........-->
+        <div id="movies-card-container" class="movies-card-container">  
+                  
+        </div>
+
+        <div class="pagination">
+            <button id="prev-button">Prev</button>
+            <button id="curr-page-button">Current Page </button>
+            <button id="next-button">Next</button>
+        </div>
+
+    </div>
+    <footer class="footer">
+        @copyright_aman <br>
+        kramans763
+    </footer>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
