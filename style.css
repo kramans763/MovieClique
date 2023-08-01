@@ -5,17 +5,25 @@ body{
 .header{
     display: flex;
     justify-content: space-between;
-    background-color: grey;
     padding: 25px;
     color: aqua;
 }
 .projectName{
-       color: orangered;
+       display: inline;
+       background-color: yellow;
+       border-radius: 8px;
+       box-shadow: black;
+
 }
 .search-bar{
     text-align: center;
     margin: 10px;
 }
+.search-button, #search-input,.sorting-button{
+    border-radius: 7px;
+    background-color: white;
+}
+
 .sorting-option{
     display: flex;
     justify-content: center;
@@ -32,11 +40,17 @@ body{
     margin: 15px;
     margin-left: 50px;
 }
+.all-tab{
+    width: 40px;
+}
 .favorites-tab{
     width: 100px;
 }
 .all-tab, .favorites-tab{
     cursor: pointer;
+    border-radius: 7px;
+    background-color: white;
+
 }
 
 .active-tab{
@@ -57,6 +71,9 @@ body{
     /*height: 400px;*/
     border: 1px solid black;
     padding: 15px;
+}
+.card:hover{
+    transform:scale(1.05);
 }
 .movie-title{
     font-size: 20px;
