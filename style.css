@@ -105,4 +105,6 @@ body{
 }
 .footer{
     background-color: grey;
+    text-align: center;
+    margin-top: 5px;
 }
